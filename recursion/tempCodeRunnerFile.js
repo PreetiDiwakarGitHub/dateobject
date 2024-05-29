@@ -1,1 +1,1 @@
-console.log(product(num));
+preparedFood();

@@ -37,3 +37,90 @@
 
 
 
+
+
+
+// ATM
+
+function enter(insertcard){
+    setTimeout(()=>{
+        console.log("Inter");
+        insertcard()
+    });
+
+}
+
+function InsertCard(processing){
+    setTimeout(()=>{
+        console.log("InsertCard");
+        processing()
+    }, 5000)
+
+}
+
+function Processing(enterPin){
+    setTimeout(()=>{
+        console.log("Processing");
+        enterPin()
+    }, 10000)
+}
+
+function EnterPin(withdrawMoney){
+    setTimeout(()=>{
+        console.log("EnterPin");
+        withdrawMoney()
+    }, 1000)
+}
+
+function withdrawMoney(collect){
+    setTimeout(()=>{
+        console.log("with");
+        collect()
+    })
+    
+}
+function collect(leaveATM){
+    setTimeout(()=>{
+        console.log("collect");
+        leaveATM()
+    })
+    
+}
+function leaveATM(){
+    console.log("Leave ");
+}
+
+
+function visitingHotel(){
+    console.log("Entering the ATM");
+    enter(()=>{
+        InsertCard(()=>{
+            Processing(()=>{
+                EnterPin(()=>{
+                    withdrawMoney(()=>{
+                        collect(()=>{
+                            leaveATM(()=>{
+
+                            })
+                        })
+                    })
+                })
+            })
+        })
+    })
+
+    
+
+    
+}
+
+visitingHotel();
+
+
+
+
+
+
+
+
+
