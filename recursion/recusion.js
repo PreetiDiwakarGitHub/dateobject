@@ -91,7 +91,7 @@ function leaveATM(){
 }
 
 
-function visitingHotel(){
+function visitingATM(){
     console.log("Entering the ATM");
     enter(()=>{
         InsertCard(()=>{
@@ -114,7 +114,7 @@ function visitingHotel(){
     
 }
 
-visitingHotel();
+visitingATM();
 
 
 
