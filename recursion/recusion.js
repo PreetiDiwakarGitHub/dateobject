@@ -74,9 +74,9 @@ function EnterPin(withdrawMoney){
 
 function withdrawMoney(collect){
     setTimeout(()=>{
-        console.log("with");
+        console.log("withdrawMoney");
         collect()
-    })
+    },5000)
     
 }
 function collect(leaveATM){
