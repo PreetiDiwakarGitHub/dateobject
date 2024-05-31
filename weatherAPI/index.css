@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+.mainbox{
+    height: 50vh;
+    width: 23vw;
+    /* border: 2px solid black; */
+    background-image: url("./img/weather6.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+}
+.maindiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+}
+#city-input{
+    height: 3rem;
+    width: 16rem;
+    border-radius: 40px;
+    margin-left: 30px;
+    text-align: center;
+
+}
+button{
+    border-radius: 50px;
+    height: 45px;
+    width: 45px;
+}
+.card{
+    margin: 30px;
+}
+.temp{
+    position: relative;
+    left: 40%;
+    font-size: 55px;
+    top: 42px;
+    color: aliceblue;
+}
+.city{
+    position: relative;
+    left: 32%;
+    font-size: 50px;
+    top: 40px;
+    color: aliceblue;
+}

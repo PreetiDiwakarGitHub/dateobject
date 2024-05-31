@@ -24,25 +24,27 @@ let Enter = new Promise(function(resolve, reject) {
     resolve("Enter the ATM");
 });
 
-let insert = function() {
+let insert = function(){
     return new Promise(function(resolve, reject) {
-        setTimeout(function(){
+        setTimeout(()=>{
         let Inserted = true;
         if (Inserted) {
             resolve("Insert the card");
-        } else {
-            reject("No card inserted");
+        } 
+        else {
+            reject("No  inserted card");
         }
         },3000);
     });
 }
 let  Processing= function() {
     return new Promise(function(resolve, reject) {
-        setTimeout(function(){
+        setTimeout(()=>{
         let Processing = true;
         if (Processing) {
             resolve("Processing");
-        } else {
+        } 
+        else {
             reject("not Processing");
         }
         },5000);
@@ -51,10 +53,10 @@ let  Processing= function() {
 
 let pin = function() {
     return new Promise(function(resolve, reject) {
-        setTimeout(function(){
+        setTimeout(()=>{
         let PinEntered = true;
         if (PinEntered) {
-            resolve("Enter the pin");
+            resolve("Enter the Pin");
         } else {
             reject("Pin not entered");
         }
@@ -64,12 +66,12 @@ let pin = function() {
 
 let withdraw = function() {
     return new Promise(function(resolve, reject) {
-        setTimeout(function(){
+        setTimeout(()=>{
         let Withdrawn = true;
         if (Withdrawn) {
             resolve("Withdraw the money");
         } else {
-            reject("No money withdrawn");
+            reject("Not withdrawn Money");
         }
         },5000);
     });
@@ -77,12 +79,12 @@ let withdraw = function() {
 
 let cash = function() {
     return new Promise(function(resolve, reject) {
-        setTimeout(function(){
+        setTimeout(()=>{
         let Cash = true;
         if (Cash) {
             resolve("Collect the cash");
         } else {
-            reject("No cash collected");
+            reject("Not collected");
         }
         },3000);
     });
