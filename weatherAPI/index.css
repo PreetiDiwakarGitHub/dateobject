@@ -49,3 +49,14 @@ button{
     top: 40px;
     color: aliceblue;
 }
+body{
+    background-image: url("./img/sky.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.weather img{
+    height: 7rem;
+    width: 7rem;
+    margin-left: 5rem;
+    margin-top: 10rem;
+}
