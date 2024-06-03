@@ -15,12 +15,13 @@ body{
 }
 .main2{
     width: 40rem;
-    background-color: rgb(245, 233, 233);
+    background-color: #ecf1f2;
     text-align: center;
     margin-left: 40rem;
     margin-top: 15rem;
     border-radius: 20px;
     box-shadow: 20px snow;
+    color: #000;;
    
 }
 #search{
@@ -45,7 +46,13 @@ button{
 h1{
     padding-top: 20px;
     padding-left: 30px;
+    color: aliceblue;
 }
 #result{
     font-size: 30px;
+}
+#image{
+    height: 10rem;
+    width: 10rem;
+    padding-top: 2rem;
 }
